@@ -1,0 +1,19 @@
+<sl-navbar></sl-navbar>
+<div class="container profile-container col-lg-6 col-md-8">
+    <div class="media">
+    <h3 class="heading-text media-body">Profile</h3>
+        <a href="#!/profile/edit" class="btn btn-outline-primary btn-large float-right">
+            <i class="fa fa-pencil" aria-hidden="true"></i>  Edit Profile
+        </a>
+    </div>
+    <h5 class="subheading-text">Name</h5>
+    <p>{{model.user.name}}</p>
+    <h5 class="subheading-text">Username</h5>
+    {{model.user.username}}
+    <h5 class="subheading-text">Email</h5>
+    {{model.user.email}}
+    <span class="edit-icon pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></span></a>
+    <a href="" ng-click="model.savePost()" ng-show="model.currUser != null"><span class="edit-icon pull-right"><i class="fa fa-star" aria-hidden="true"></i></span></a>
+    <h5 class="subheading-text">Positions</h5>
+    {{model.user.positions}}
+</div>

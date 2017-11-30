@@ -1,0 +1,22 @@
+<sl-navbar></sl-navbar>
+<div class="container profile-container col-lg-6 col-md-8">
+    <h3 class="heading-text">Edit Profile</h3>
+    <div class="form-group container-list-group">
+        <h5 class="profile-edit-headings">Email</h5>
+        <input type="email"
+               class="form-control"
+               ng-model="model.user.email"/>
+
+        <h5 class="profile-edit-headings">Another setting maybe</h5>
+        <a>(i really cant think of anything else this should have. maybe replace this entire page with an inline edit :/)</a>
+        <br>
+        <div class="">
+            <button ng-click="model.updateUser()" class="btn btn-success btn-large bottom-button">
+                <i class="fa fa-floppy-o" aria-hidden="true"></i>  Save Changes
+            </button>
+            <a href="#!/home" class="btn btn-danger btn-large bottom-button">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>  Cancel
+            </a>
+        </div>
+    </div>
+</div>

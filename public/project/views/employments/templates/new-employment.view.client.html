@@ -1,0 +1,63 @@
+<sl-navbar></sl-navbar>
+<div class="container-fluid col-lg-6 col-md-8 mx-auto">
+    <h4>Add Hours for {{model.position.name}} at {{model.position.partner}}</h4>
+    <div class="form-group">
+        <h6>Date</h6>
+        <input type="date"
+               class="form-control"
+               placeholder="Select date"
+               ng-model="model.employment.date"
+               id="datepicker"/>
+
+        <h6>Time</h6>
+        <wy-time-picker
+                data-dropdown-toggle-state="settings.second.dropdownToggleState"
+                data-time-settings="settings.second.time"
+                data-apply-callback="onApplyTimePicker()"
+                data-clear-callback="onClearTimePicker()"
+                data-no-validation="settings.second.noValidation">
+        </wy-time-picker>
+
+        <fieldset class="form-group">
+            <h6>Bucket</h6>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    bucket 1
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                    bucket 2
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                    bucket 3
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                    bucket 4
+                </label>
+            </div>
+        </fieldset>
+
+        <h6>Comments and Feedback (Optional)</h6>
+            <textarea class="form-control"
+                      name="feedback"
+                      rows="5"
+                      ng-model="model.employment.feedback"
+                      placeholder="Description"></textarea>
+
+        <div class="d-flex justify-content-center">
+        <a class="bottom-button btn btn-primary btn-lg"
+           ng-click="model.addemployment(model.position)">Add</a>
+        <a class="bottom-button btn btn-danger btn-lg"
+           href="#!/home">Cancel</a>
+        </div>
+    </div>
+</div>

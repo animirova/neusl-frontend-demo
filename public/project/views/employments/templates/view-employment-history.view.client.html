@@ -1,0 +1,40 @@
+<sl-navbar></sl-navbar>
+<div class="container-fluid employment-history col-lg-6 col-md-8 mx-auto">
+    <h3 class="heading-text">Previously Logged Hours</h3>
+    <div class="container-fluid" ng-show="!model.employments || len(model.employments) < 1">
+        <h6>You haven't logged any hours yet.</h6>
+    </div>
+    <div class="list-group employment-history-list">
+        <div class="list-group-item list-group-item-action flex-column align-items-start history-list-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Employment Name</h5>
+                <small>11-05-2017</small>
+            </div>
+                <p class="mb-1">10:30 AM to 5:50 PM at PartnerName (7 hours)
+                    <a href="#!/editHours" class="badge badge-info">
+                        <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                    </a>
+                    <a href="#!/addhours" class="badge badge-danger">
+                        <i class="fa fa-times" aria-hidden="true"></i> Delete
+                    </a>
+                </p>
+        </div>
+
+        <div class="list-group-item list-group-item-action flex-column align-items-start history-list-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Employment2 Name</h5>
+                <small>11-05-2017</small>
+            </div>
+            <p class="mb-1">10:30 AM to 5:50 PM at PartnerName (7 hours)
+                <a href="#!/editHours" class="badge badge-info">
+                    <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                </a>
+                <a href="#!/addhours" class="badge badge-danger">
+                    <i class="fa fa-times" aria-hidden="true"></i> Delete
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</div>

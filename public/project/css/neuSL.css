@@ -1,0 +1,42 @@
+.bottom-button {
+    margin:5px;
+}
+
+.home-history-list {
+    margin:5px;
+}
+
+.login-container {
+}
+
+.sl-nav {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.inner-container{
+    z-index: 999;
+}
+
+ul.quick-hours {
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+ul.quick-hours li.quick-hours-item {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.quick-hours li.quick-hours-item:last-child {
+    border-bottom: none
+}
+
+.heading-text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.profile-edit-headings {
+    padding-top: 5px;
+}

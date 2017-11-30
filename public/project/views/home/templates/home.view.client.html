@@ -1,0 +1,98 @@
+<sl-navbar></sl-navbar>
+<div class="container-fluid home-hours col-lg-6 col-md-8">
+<h3 class="heading-text">Add Hours</h3>
+<div class="no-positions media" ng-show="!model.user.positions || len(model.user.positions) < 1">
+    <h5 class="notification-text media-body">No current positions to add hours to.</h5>
+    <a id="addPosnButton" href="#!/position/new" class="btn btn-outline-info btn-large float-right">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add New Position
+    </a>
+</div>
+
+    <!--actual code w ng-repeat-->
+<!--<ul class="list-unstyled quick-employments">-->
+    <!--<li class="media quick-employments-item" ng-repeat="position in model.user.positions">-->
+        <!--<div class="media-body">-->
+            <!--<h5>{{position.name}}</h5>-->
+        <!--</div>-->
+        <!--<button id="addHrsButton" ng-click="model.addHours(position)" class="btn btn-outline-primary btn-large float-right">-->
+            <!--<i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Hours-->
+        <!--</button>-->
+    <!--</li>-->
+<!--</ul>-->
+
+    <!--visual sample-->
+    <div class="list-group quick-hours-list">
+    <div class="media quick-hours-item list-group-item list-group-item-action flex-column align-items-start history-list-item">
+        <div class="media-body">
+            <h5>pos1</h5>
+        </div>
+        <a href="#!/new/hours" class="btn btn-outline-info btn-large float-right">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Hours
+        </a>
+    </div>
+        <div class="media quick-hours-item list-group-item list-group-item-action flex-column align-items-start history-list-item">
+            <div class="media-body">
+                <h5>pos 2</h5>
+            </div>
+            <a href="#!/new/hours" class="btn btn-outline-info btn-large float-right">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Hours
+            </a>
+        </div>
+
+        <!--<li class="media quick-hours-item">-->
+            <!--<div class="media-body">-->
+                <!--<h5>{{model.employment.positionName}}</h5>-->
+            <!--</div>-->
+            <!--<a ng-click="model.addEmployment(position)" class="btn btn-outline-primary btn-large float-right">-->
+                <!--<i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Hours-->
+            <!--</a>-->
+        <!--</li>-->
+</div>
+
+
+</div>
+<div class="container-fluid stats col-lg-6 col-md-8">
+    <h3 class="heading-text">Statistics</h3>
+    <hr></h>
+</div>
+
+<div class="container-fluid col-lg-6 col-md-8">
+    <div class="no-positions media" ng-show="!model.user.positions || len(model.user.positions) < 1">
+        <h3 class="notification-text media-body">SL Employment History</h3>
+        <a href="#!/history" class="btn btn-info btn-large float-right">
+            All Employment History
+        </a>
+    </div>
+    <div class="list-group home-history-list">
+        <div class="list-group-item list-group-item-action flex-column align-items-start history-list-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Employment Name</h5>
+                <small>11-05-2017</small>
+            </div>
+            <p class="mb-1">10:30 AM to 5:50 PM at PartnerName (7 hours)
+                <a href="#!/editHours" class="badge badge-secondary">
+                    <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                </a>
+                <a href="#!/addhours" class="badge badge-danger">
+                    <i class="fa fa-times" aria-hidden="true"></i> Delete
+                </a>
+            </p>
+        </div>
+
+        <div class="list-group-item list-group-item-action flex-column align-items-start history-list-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Employment2 Name</h5>
+                <small>11-05-2017</small>
+            </div>
+            <p class="mb-1">10:30 AM to 5:50 PM at PartnerName (7 hours)
+                <a href="#!/editHours" class="badge badge-secondary">
+                    <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                </a>
+                <a href="#!/addhours" class="badge badge-danger">
+                    <i class="fa fa-times" aria-hidden="true"></i> Delete
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
